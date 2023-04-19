@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 as base-environment
+FROM ubuntu:22.10 as base-environment
 
 ENV TZ=US/Eastern
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
